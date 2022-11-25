@@ -1,0 +1,59 @@
+package restaurant;
+import java.util.Scanner;
+public  class  Eje {
+	
+		static Scanner es = new Scanner(System.in);
+		public static void mostrarentradas() {
+
+			int [] entrada = new int [3];
+			entrada[0]= 1; //Dedos de queso :60$
+			entrada[1]= 2; //Guacamole :30$ 
+			entrada[2]= 3; //Papas a la francesa :50$
+			
+			int Dedos=1;
+			int Guacamole=2;
+			int Papas=3;
+
+			System.out.println( "1. Dedos de queso : 60$ \n"
+					+ 			"2. Guacamole : 30$ \n"
+					+ 			"3.Papas a la francesa : 50$");
+			System.out.println("Ingrese la entrada que Desea");
+			validar();
+			int op =es.nextInt();
+			
+			for (int i = 0; i < entrada.length; i++) {
+				if (entrada [i] ==op) {
+					 Dedos=1;
+					 Guacamole=2;
+					 Papas=3;
+
+				}
+				
+			}
+			if(op==1) {
+				System.out.println("1.Dedos de Queso, Gran eleccion!");
+				//Cuenta + 30
+			}else if(op==2) {
+				System.out.println("2.Guacamole Gran eleccion" );
+				//Centa +60
+			}else if(op==3) {
+				System.out.println("3. Papas a la francesa Gran eleccion");
+				//Cuenta +50
+			}
+			
+		
+			
+		}
+		public static void main(String []args) {
+			mostrarentradas();
+		}
+		
+		public static void validar() {
+
+			while (!es.hasNextInt()) {
+				es.next();
+				System.out.println("Digite nuevamente");
+			}
+		}
+	
+}

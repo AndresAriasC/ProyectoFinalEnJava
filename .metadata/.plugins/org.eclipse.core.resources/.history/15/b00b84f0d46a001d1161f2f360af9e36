@@ -1,0 +1,30 @@
+package proyectorestaurante;
+
+public class Platos {
+
+	public static void mostrarPlatos() {
+		
+		int p [] = new int [3];
+		p [0] = 1;
+		p [1] = 2;
+		p [2] = 3;
+		p [3] = 4;
+		p [4] = 5;
+		
+		int en1 = 1;
+		int en2 = 2;
+		int en3 = 3;
+		int en4 = 4;
+		int en5 = 5;
+		
+		System.out.println("1- Entradas\n"+
+"1- Dedos de queso ------------------------------------------------ C$60  |\n"+
+"2- Guacamole ----------------------------------------------------- C$30  |\n"+
+"3- Papas a la francesa ------------------------------------------- C$50  |\n"+
+"4- Guacamole ----------------------------------------------------- C$30  |\n"+
+"5- Papas a la francesa ------------------------------------------- C$50  |\n");
+		
+		
+	}
+	
+}

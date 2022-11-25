@@ -1,0 +1,16 @@
+package proyectorestaurante;
+
+import java.util.ArrayList;
+
+public class AndminArray {
+
+	ArrayList<Platillos> platillo;
+	
+	public AndminArray() {}
+	
+	//brinda una instruccion (platillo = new arrayList)
+	public void crearArrayList() {
+		platillo = new ArrayList<>();
+	}
+	
+}

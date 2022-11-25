@@ -1,0 +1,29 @@
+package proyectorestaurante;
+
+import java.util.ArrayList;
+
+public class AndminArray extends Platillos {
+
+	ArrayList<Platillos> platillosMenu;
+	
+	public AndminArray() {}
+	
+	//brinda una instruccion (platillo = new arrayList)
+	public void crearArrayList() {
+		platillosMenu = new ArrayList<>();
+	}
+	
+	//enviamos platillo por marametros
+	public void insertarPlatillo(Platillos platilloAdd) {
+		platillosMenu.add(platilloAdd);
+	}
+	
+	public String show() {
+		String mostrar = "";
+		for (int i = 0; i < platillosMenu.size(); i++) {
+			mostrar += platillosMenu.get(i).toString();
+		}
+		return mostrar;
+	}
+	
+}

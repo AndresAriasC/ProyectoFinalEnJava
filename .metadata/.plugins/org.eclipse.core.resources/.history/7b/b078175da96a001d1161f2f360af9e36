@@ -1,0 +1,14 @@
+package proyectorestaurante;
+
+public class Mesa {
+	private String mesaLibre;
+	private String codigo;
+	
+	
+	@Override
+	public String toString() {
+		return "Mesa disponible: " + mesaLibre + ", Codigo de mesa: " + codigo + ".";
+	}
+	
+	
+}

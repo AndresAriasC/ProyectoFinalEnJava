@@ -1,0 +1,17 @@
+package proyectorestaurante;
+
+import java.util.ArrayList;
+
+public class Menu extends Platillos {
+
+	public static void MenuPlatillos() {
+	
+
+		
+	}
+	
+	
+
+}
+
+

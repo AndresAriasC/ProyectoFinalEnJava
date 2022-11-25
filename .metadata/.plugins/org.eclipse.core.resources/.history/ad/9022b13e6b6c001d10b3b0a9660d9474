@@ -1,0 +1,67 @@
+package proyectorestaurante;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Menu extends Platillos {
+	Scanner entrada = new Scanner(System.in);
+public int opcionPlatillo ;
+
+
+	public int getOpcionPlatillo() {
+	return opcionPlatillo;
+}
+public void setOpcionPlatillo(int opcionPlatillo) {
+	this.opcionPlatillo = opcionPlatillo;
+}
+
+
+
+
+public void header() {
+	System.out.println("---------------------------------------------------------");
+	System.out.println("------------------------ M E N U ------------------------|");
+}
+	
+	
+public void MetodoPagar(double sumaTotal) {
+	double dollar = 36;
+	int op, montoBillete;
+	System.out.println("Con que tipo de moneda desea pagar?");
+	System.out.println("1) Cordobas /t 2) Dolares");
+	op = entrada.nextInt();
+	switch (op) {
+	case 1: 
+		System.out.println("Ha elegido pagar en cordobas \n " + 
+	" Digite el monto: ");
+		montoBillete = entrada.nextInt();
+		
+	do {	
+		if (montoBillete < sumaTotal) {
+		System.out.println("El dinero brindado no es suficiente para realizar el pago");
+	}else {
+		System.out.println("El pago se ha realizado con exito");
+	}
+		}while(montoBillete >= sumaTotal);
+	}
+	
+}
+	
+	public static double SacarIva(double subtotal) {
+		double IVA= (subtotal*0.15);
+		 System.out.println("|  IVA 15% : ------------------- " +  String.format("%.2f",(IVA)));
+		   return IVA;
+	}
+	
+	public static double propina(double subtotal) {
+		Mesero mes1 = new Mesero();
+		double propina=(subtotal*0.05);
+		System.out.println("|  Propina de "+ mes1.getNombre() +" es de: ---- "+propina);
+		return propina;
+	}
+	
+}
+	
+
+
+

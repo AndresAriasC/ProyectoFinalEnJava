@@ -1,0 +1,34 @@
+package proyectorestaurante;
+
+public class Mesa {
+	private String mesaLibre;
+	private String codigo;
+	
+	
+	
+	public String getMesaLibre() {
+		return mesaLibre;
+	}
+	public void setMesaLibre(String mesaLibre) {
+		this.mesaLibre = mesaLibre;
+	}
+
+
+	public String getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Mesa disponible: " + mesaLibre + ", Codigo de mesa: " + codigo + ".";
+	}
+	
+	
+	
+	
+	
+}

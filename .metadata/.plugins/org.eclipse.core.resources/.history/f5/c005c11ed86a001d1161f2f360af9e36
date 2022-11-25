@@ -1,0 +1,13 @@
+package proyectorestaurante;
+
+public class Validaciones {
+
+	
+	public static void validar() {
+
+		while (!es.hasNextInt()) {
+			es.next();
+			System.out.println("Digite nuevamente");
+		}
+	}
+}

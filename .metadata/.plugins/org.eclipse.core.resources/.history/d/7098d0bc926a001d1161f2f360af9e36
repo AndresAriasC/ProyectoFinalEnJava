@@ -1,0 +1,22 @@
+package controlsalarialmensual;
+
+public class EmpleadoRecibo extends Empleado{
+
+	 private String strRuc;
+	 
+	 
+	 //constructor sin parametros
+	 public EmpleadoRecibo(){
+	        
+	    }
+	 
+	 //constructor parametrizado
+	    public EmpleadoRecibo( String nombre, String apellido, String dni, String direccion, int edad, String formacionAcademica, int añosExperiencia, int horas_trabajadas, int pago_horas,
+	            String strRuc) {
+	        super(nombre, apellido, dni, direccion, edad, formacionAcademica, añosExperiencia, horas_trabajadas, pago_horas);
+	        this.strRuc = strRuc;
+	       
+	    }
+	
+	
+}

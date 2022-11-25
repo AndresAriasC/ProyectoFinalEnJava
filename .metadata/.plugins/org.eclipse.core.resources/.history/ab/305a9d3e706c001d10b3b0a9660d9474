@@ -1,0 +1,12 @@
+package proyectorestaurante;
+
+public class Saludar extends Mesero{
+	public Saludar() {
+		this.getNombre();
+		this.getNombreRestaurante();
+	}
+	
+	public void decirAlgo() {
+		System.out.println("Hola, bienvenido a " + nombreRestaurante + ". \nLe atiende: " + nombre + ". \n Que desea ordenar? \n");
+	}
+}

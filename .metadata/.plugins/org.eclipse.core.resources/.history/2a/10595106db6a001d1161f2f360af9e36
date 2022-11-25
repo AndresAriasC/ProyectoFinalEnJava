@@ -1,0 +1,9 @@
+package proyectorestaurante;
+
+public class Platillos {
+	
+	private String nombrePlatillo;
+	private double precio;
+	
+	
+}

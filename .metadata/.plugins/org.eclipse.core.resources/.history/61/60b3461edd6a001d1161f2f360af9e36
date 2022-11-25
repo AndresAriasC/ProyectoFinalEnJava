@@ -1,0 +1,27 @@
+package proyectorestaurante;
+
+import java.util.ArrayList;
+
+public class Menu {
+
+	public static void MenuPlatillos() {
+	
+		ArrayList<Platillos> listaPlatillos = new ArrayList<Platillos>();
+		Platillos p1 = new Platillos("Dedos de queso", 60);
+		Platillos p2 = new Platillos("Dedos de quesito", 50);
+		Platillos p3 = new Platillos("Dedos de quesote", 40);
+		Platillos p4 = new Platillos("Dedos de quesun", 20);
+		Platillos p5 = new Platillos("Dedos de quesa", 100);
+		
+		
+		for (int i = 0; i < listaPlatillos.size(); i++) {
+			System.out.println(listaPlatillos.get(i));
+		}
+		
+	}
+	
+	
+
+}
+
+

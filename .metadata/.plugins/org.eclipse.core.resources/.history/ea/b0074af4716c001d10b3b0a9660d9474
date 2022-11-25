@@ -1,0 +1,12 @@
+package proyectorestaurante;
+
+public class Despedir extends Mesero{
+	public Despedir() {
+		this.getNombre();
+		this.getNombreRestaurante();
+	}
+	//POLIMORFISMO
+	public void decirAlgo() {
+		System.out.println("De parte de " + this.getNombre() + ". \n y " + this.getNombreRestaurante() + ". \n deseamos que haya disfrutado nuestros servicios. \n Feliz Navidad JO! JO! JO!");
+	}
+}

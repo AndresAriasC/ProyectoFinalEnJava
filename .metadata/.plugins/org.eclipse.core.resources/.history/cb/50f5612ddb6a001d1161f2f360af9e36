@@ -1,0 +1,15 @@
+package proyectorestaurante;
+
+public class Platillos {
+	
+	private String nombrePlatillo;
+	private double precio;
+	
+	public Platillos(String nombrePlatillo, double precio) {
+		
+		this.nombrePlatillo = nombrePlatillo;
+		this.precio = precio;
+	}
+	
+	
+}
