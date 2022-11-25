@@ -5,8 +5,9 @@ public class Mesa {
 	private String codigo;
 	private int numMesa;
 	
-	
-	//no se usa porque pues no eh
+	//no esta puesto en practica
+	//no esta puesto en practica
+	//no esta puesto en practica
 	
 	public int getnumMesa() {
 		return numMesa;
